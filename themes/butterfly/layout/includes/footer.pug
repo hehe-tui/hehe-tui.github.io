@@ -1,0 +1,23 @@
+#footer-wrap
+  if theme.footer.owner.enable
+    - var now = new Date()
+    - var nowYear = now.getFullYear()
+    if theme.footer.owner.since && theme.footer.owner.since != nowYear
+      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} <i style="color:#FF6A6A" class="fa fa-heartbeat"></i>${config.author}`
+    else
+      .copyright!= `&copy;${nowYear} <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> ${config.author}`
+  if theme.footer.copyright
+    .framework-info
+      span= _p('') + ' '
+      a(href='https://github.com/hehe-tui')= 'GitHub'
+      span.footer-separator |
+      span= _p('') + ' '
+      a(href='https://blog.csdn.net/HEHE_TUI')= 'CSDN'
+  if theme.footer.custom_text
+    .footer_custom_text!=`${theme.footer.custom_text}`
+  if theme.footer.ICP.enable
+    .icp
+      a(href=theme.footer.ICP.url)
+        if theme.footer.ICP.icon
+          img.icp-icon(src=url_for(theme.footer.ICP.icon) alt='ICP')
+        span=theme.footer.ICP.text

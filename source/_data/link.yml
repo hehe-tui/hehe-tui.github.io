@@ -1,0 +1,16 @@
+- class_name: BIG-OLD
+  class_desc: 皆九年之学，论秀，吾不及汝
+  link_list:
+    - name: Adil
+      link: https://adil.com.cn
+      avatar: https://adil.com.cn/img/%E5%A4%B4%E5%83%8F.jpg
+      descr: 生命不死，折腾不止
+    - name: Akilar
+      link: https://akilar.top
+      avatar: https://akilar.top/img/siteicon/favicon.png
+      descr: 欢迎光临糖果屋
+    - name: Alex
+      link: https://alexcld.com
+      avatar: https://alexcld.com/img/author.jpg
+      descr: children don't lie
+
