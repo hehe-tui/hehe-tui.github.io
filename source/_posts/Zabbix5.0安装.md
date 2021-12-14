@@ -3,7 +3,7 @@ title: Zabbix5.0安装
 date: 2020-12-5
 updated:
 description: 
-cover: https://pic.downk.cc/item/5fc1f80b15e7719084aa672f.jpg
+cover: https://pic.imgdb.cn/item/60a8c2096ae4f77d3547f25c.jpg
 tag:
   - Zabbix
 categories:

@@ -3,7 +3,7 @@ title: Kubernetes介绍与安装
 date: 2020-12-18
 updated:
 description:
-cover: https://pic.downk.cc/item/5fdc6fba3ffa7d37b377761e.jpg
+cover: https://pic.imgdb.cn/item/60a8c21a6ae4f77d3548c1b1.jpg
 tag:
   - Kubernetes
 categories:

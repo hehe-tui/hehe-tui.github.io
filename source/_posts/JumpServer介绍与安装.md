@@ -3,7 +3,7 @@ title: JumpServer介绍与安装
 date: 2021-1-25
 updated:
 description:
-cover: https://img.imgdb.cn/item/600d53123ffa7d37b35a6a8d.jpg
+cover: https://pic.imgdb.cn/item/60a91b366ae4f77d350df72d.jpg
 tag:
   - JumpServer
 categories:

@@ -3,7 +3,7 @@ title: MySQL增量备份与恢复
 date: 2021-1-17
 updated:
 description:
-cover: https://img.imgdb.cn/item/6003e5113ffa7d37b37482f8.jpg
+cover: https://pic.imgdb.cn/item/61b5b6892ab3f51d91841eef.jpg
 tag:
   - MySQL
 categories:
