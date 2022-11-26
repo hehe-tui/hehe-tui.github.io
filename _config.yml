@@ -110,7 +110,7 @@ deploy:
 
 douban:
   user: 226451505
-  builtin: false
+  builtin: true
   book:
     title: '我的书单'
     quote: '好像我吃了你的女孩似的...去那里找夏弥吧，我把她的一切都留在那里了。'
@@ -124,13 +124,6 @@ douban:
     meta: false
     comments: true
     top_img: https://pic.downk.cc/item/5fb52836b18d6271136957e2.jpg
-    aside: true
-  game:
-    title: '我的游戏世界'
-    quote: '找什么女朋友，是游戏不好玩了？'
-    meta: false
-    comments: true
-    top_img: https://pic.downk.cc/item/5fb51fe1b18d627113679382.jpg
     aside: true
   timeout: 10000 
 
