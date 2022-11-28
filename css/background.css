@@ -1,0 +1,13 @@
+#web_bg {
+    background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);
+}
+/* 文章页背景 */
+.layout_post>#post {
+    /* 以下代表白色透明度为0.5 */
+    background: rgba(255,255,255,.5);
+}
+/* 所有背景（包括首页卡片、文章页、页面页等） */
+#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+    /* 以下代表白色透明度为0.5 */
+    background: rgba(255,255,255,.5);
+}
