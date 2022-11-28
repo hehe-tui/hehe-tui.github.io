@@ -16,7 +16,7 @@ menu:
     - 图库 || /photo/ || fas fa-images
     - 书籍 || /books/ || fas fa-book
     - 电影 || /movies/ || fas fa-film
-  友链: /link/ || fas fa-link
+  # 友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heartbeat
 
 # Hide the child menu items in mobile sidebar

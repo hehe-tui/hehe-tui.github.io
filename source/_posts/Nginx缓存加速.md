@@ -3,7 +3,7 @@ title: Nginx缓存加速
 date: 2020-12-31
 updated:
 description:
-cover: https://pic.downk.cc/item/5fe9a5cf3ffa7d37b3e28311.jpg
+cover: https://pic.imgdb.cn/item/6384a28216f2c2beb1d15647.jpg
 tag:
   - Nginx
 categories:

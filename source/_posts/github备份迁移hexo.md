@@ -4,7 +4,7 @@ sticky: 100
 date: 2020-11-12
 updated:
 description:  备个份，说不定哪天就丢了。。。
-cover: https://pic.downk.cc/item/5fb51fdcb18d62711367918d.jpg
+cover: https://pic.imgdb.cn/item/6384a20416f2c2beb1d0c290.jpg
 tag:
   - Hexo
 categories:

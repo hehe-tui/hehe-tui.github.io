@@ -3,7 +3,7 @@ title: Redis介绍与安装
 date: 2020-12-20
 updated:
 description:
-cover: https://pic.imgdb.cn/item/60a8c2126ae4f77d35485f8a.jpg
+cover: https://pic.imgdb.cn/item/6384a30716f2c2beb1d27190.jpg
 tag:
   - Redis
 categories:
