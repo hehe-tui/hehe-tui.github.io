@@ -3,7 +3,7 @@ title: Squid缓存加速
 date: 2020-12-28
 updated:
 description: 
-cover: https://pic.downk.cc/item/5fe9a5bf3ffa7d37b3e265fd.jpg
+cover: https://pic.imgdb.cn/item/63859d3f16f2c2beb1279261.jpg
 tag:
   - Squid
 categories:
