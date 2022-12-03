@@ -3,7 +3,7 @@ title: HAProxy+Nginx负载均衡介绍与搭建
 date: 2020-12-28
 updated:
 description:
-cover: https://img.imgdb.cn/item/6002932d3ffa7d37b3d81018.jpg
+cover: https://pic.imgdb.cn/item/638af5b416f2c2beb182a1ef.jpg
 tag:
   - HAProxy
   - Nginx

@@ -3,7 +3,7 @@ title: Codis介绍与安装
 date: 2021-1-13
 updated:
 description:
-cover: https://pic.imgdb.cn/item/63859ab816f2c2beb123c700.jpg
+cover: https://pic.imgdb.cn/item/638af59e16f2c2beb1826d20.jpg
 tag:
   - Codis
 categories:

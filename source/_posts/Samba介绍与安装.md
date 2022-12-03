@@ -3,7 +3,7 @@ title: Samba介绍与安装
 date:
 updated:
 description:
-cover: https://pic.imgdb.cn/item/6384a27016f2c2beb1d14165.jpg
+cover: https://pic.imgdb.cn/item/638af5a416f2c2beb1827dc0.jpg
 tag:
   - Samba
 categories:

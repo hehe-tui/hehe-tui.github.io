@@ -3,7 +3,7 @@ title: Docker安装部署ElK教程
 date: 2020-12-3
 updated:
 description: 
-cover: https://pic.imgdb.cn/item/6385a12316f2c2beb12e69cd.jpg
+cover: https://pic.imgdb.cn/item/638af58116f2c2beb1822199.jpg
 tag:
   - Elasticsearch 
   - Logstash 

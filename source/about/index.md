@@ -2,7 +2,7 @@
 title: 可爱的我
 date: 2020-11-13 14:58:17
 type: about
-top_img: https://img.imgdb.cn/item/5fafeff2ffc462a2bb4c39fb.jpg
+top_img: https://pic.imgdb.cn/item/638af57016f2c2beb181f5c0.jpg
 ---
 <center>
 {% hideBlock <font face="黑体" size=10>我是谁?</font> %}

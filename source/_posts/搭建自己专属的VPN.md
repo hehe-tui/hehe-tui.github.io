@@ -3,7 +3,7 @@ title: 搭建自己专属的VPN
 date: 2020-11-20
 updated:
 description:  谁能拒绝一个酷炫的vpn呢！
-cover: https://pic.imgdb.cn/item/6384a73516f2c2beb1da9157.jpg
+cover: https://pic.imgdb.cn/item/6384c18116f2c2beb10a18a7.jpg
 tag:
   - Shadowsocks
 categories:

@@ -3,7 +3,7 @@ title: GitLab+Jenkins持续集成
 date: 2020-11-28
 updated:
 description:  
-cover: https://pic.imgdb.cn/item/6384c18116f2c2beb10a18a7.jpg
+cover: https://pic.imgdb.cn/item/638af5ad16f2c2beb18292f8.jpg
 tag:
   - Jenkins 
   - GitLab
