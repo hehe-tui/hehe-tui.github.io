@@ -623,7 +623,7 @@ aside:
       link: https://github.com/hehe-tui
   card_announcement:
     enable: true
-    content: 你来看我啦！
+    content: 开开心心，不动脑筋；白白胖胖，充满希望！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
