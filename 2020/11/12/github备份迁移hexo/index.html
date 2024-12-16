@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GitHub备份迁移Hexo | 极品路人甲</title><meta name="keywords" content="Hexo"><meta name="author" content="极品路人甲"><meta name="copyright" content="极品路人甲"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="备个份，说不定哪天就丢了。。。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub备份迁移Hexo">
+<meta property="og:url" content="https://butterfly.jiangjiahao.cloud/2020/11/12/github%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BBhexo/index.html">
+<meta property="og:site_name" content="极品路人甲">
+<meta property="og:description" content="备个份，说不定哪天就丢了。。。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6384a20416f2c2beb1d0c290.jpg">
+<meta property="article:published_time" content="2020-11-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-12-16T03:08:42.206Z">
+<meta property="article:author" content="极品路人甲">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/6384a20416f2c2beb1d0c290.jpg"><link rel="shortcut icon" href="https://pic.downk.cc/item/5fafdb0613b6a3f6d1012a07.jpg"><link rel="canonical" href="https://butterfly.jiangjiahao.cloud/2020/11/12/github%E5%A4%87%E4%BB%BD%E8%BF%81%E7%A7%BBhexo/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-1PPRHY53NS"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-1PPRHY53NS');
+</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 极品路人甲","link":"链接: ","source":"来源: 极品路人甲","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: true
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-12-16 11:08:42'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = '2'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><link rel="stylesheet" href="/css/background.css"><link rel="stylesheet" href="/css/scrollbars.css"><meta name="referrer" content="no-referrer-when-downgrade"><meta name="generator" content="Hexo 5.4.2"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://pic.downk.cc/item/5fafdb0613b6a3f6d1012a07.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-coffee"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/photo/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书籍</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heartbeat"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://pic.imgdb.cn/item/6384a20416f2c2beb1d0c290.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">极品路人甲</a></span><span id="weather-v2-plugin-simple"></span><div id="he-plugin-simple"></div><div id="none_space"></div><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-coffee"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/photo/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书籍</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heartbeat"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><h1 class="post-title">GitHub备份迁移Hexo</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-11-11T16:00:00.000Z" title="发表于 2020-11-12 00:00:00">2020-11-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-16T03:08:42.206Z" title="更新于 2024-12-16 11:08:42">2024-12-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/GitHub/">GitHub</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">486</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="创建备份文件"><a href="#创建备份文件" class="headerlink" title="创建备份文件"></a>创建备份文件</h2><p>先新建一个hexo文件夹，作为分支的工作目录，用于保存将要备份的文件和文件夹</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh ~]# mkdir hexo</span><br></pre></td></tr></table></figure>
+<p>把GitHub上的Hexo仓库clone到hexo文件夹中</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh ~]# git clone <span class="attr">https</span>:<span class="comment">//github.com/hehe-tui/hehe-tui.github.io hexo</span></span><br></pre></td></tr></table></figure>
+<p>删除<strong>除了.git文件夹</strong>的其它所有文件和文件夹，主要是为了得到版本管理的.git。下面命令不会删除隐藏文件和文件夹。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh ~]# cd hexo</span><br><span class="line">[root@jjh hexo]# rm -r *</span><br></pre></td></tr></table></figure>
+<p>创建.gitignore文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh hexo]# touch .<span class="property">gitignore</span></span><br></pre></td></tr></table></figure>
+<p>最后把需要备份的文件和文件夹都复制到hexo文件夹下，hexo的目录结构应该如下</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh hexo]# ll -a</span><br><span class="line">total <span class="number">32</span></span><br><span class="line">drwxr-xr-x  <span class="number">6</span> root root <span class="number">4096</span> <span class="title class_">Oct</span> <span class="number">27</span> <span class="number">09</span>:<span class="number">57</span> .</span><br><span class="line">dr-xr-x---. <span class="number">8</span> root root <span class="number">4096</span> <span class="title class_">Oct</span> <span class="number">27</span> <span class="number">10</span>:<span class="number">00</span> ..</span><br><span class="line">-rw-r--r--  <span class="number">1</span> root root <span class="number">3210</span> <span class="title class_">Oct</span> <span class="number">27</span> <span class="number">09</span>:<span class="number">56</span> _config.<span class="property">yml</span></span><br><span class="line">drwxr-xr-x  <span class="number">8</span> root root <span class="number">4096</span> <span class="title class_">Oct</span> <span class="number">27</span> <span class="number">10</span>:<span class="number">02</span> .<span class="property">git</span></span><br><span class="line">-rw-r--r--  <span class="number">1</span> root root    <span class="number">0</span> <span class="title class_">Oct</span> <span class="number">27</span> <span class="number">09</span>:<span class="number">56</span> .<span class="property">gitignore</span></span><br><span class="line">-rw-r--r--  <span class="number">1</span> root root  <span class="number">842</span> <span class="title class_">Oct</span> <span class="number">27</span> <span class="number">09</span>:<span class="number">57</span> package.<span class="property">json</span></span><br><span class="line">drwxr-xr-x  <span class="number">2</span> root root <span class="number">4096</span> <span class="title class_">Oct</span> <span class="number">27</span> <span class="number">09</span>:<span class="number">56</span> scaffolds</span><br><span class="line">drwxr-xr-x  <span class="number">6</span> root root <span class="number">4096</span> <span class="title class_">Oct</span> <span class="number">27</span> <span class="number">09</span>:<span class="number">57</span> source</span><br><span class="line">drwxr-xr-x  <span class="number">4</span> root root <span class="number">4096</span> <span class="title class_">Oct</span> <span class="number">27</span> <span class="number">09</span>:<span class="number">56</span> themes</span><br></pre></td></tr></table></figure>
+<p>如果使用的主题是从GitHub克隆的，那么主题文件夹下有Git管理文件，需要将它们移除，否则上传github会为空目录。我使用的是hexo-butterfly，需要移除的文件如下</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh butterfly]# rm -rf .<span class="property">git</span>*</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h2><p>创建一个叫hexo的分支</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh hexo]# git checkout -b hexo</span><br></pre></td></tr></table></figure>
+<p>保存所有文件到暂存区</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh hexo]# git add --all</span><br></pre></td></tr></table></figure>
+<p>提交变更</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh hexo]# git commit -m <span class="string">&quot;创建hexo分支&quot;</span></span><br></pre></td></tr></table></figure>
+<p>推送到GitHub，并用–set-upstream与origin创建关联，将hexo设置为默认分支</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh hexo]# git push --set-upstream origin hexo</span><br></pre></td></tr></table></figure>
+
+<h2 id="迁移博客"><a href="#迁移博客" class="headerlink" title="迁移博客"></a>迁移博客</h2><p>预先安装环境<br>将hexo分支克隆下来</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[root@jjh ~]# git clone -b hexo <span class="attr">https</span>:<span class="comment">//github.com/hehe-tui/hehe-tui.github.io</span></span><br></pre></td></tr></table></figure>
+<p>然后安装Hexo依赖</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>启动服务，访问 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 判断备份是否成功。</p>
+</article><div><div style="text-align:center;color: #ccc;font-size:14px;font-family: cursive;">-------------&#x7EB8;&#x77ED;&#x60C5;&#x957F; <i class="fa fa-umbrella"></i> &#x4E0B;&#x6B21;&#x518D;&#x89C1;-------------</div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/6384a20416f2c2beb1d0c290.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2020/11/20/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E4%B8%93%E5%B1%9E%E7%9A%84VPN/"><img class="prev-cover" src="https://pic.imgdb.cn/item/6384c18116f2c2beb10a18a7.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">搭建自己专属的VPN</div></div></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://pic.downk.cc/item/5fafdb0613b6a3f6d1012a07.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">极品路人甲</div><div class="author-info__description">我来见你了，真是不容易啊，你在好远的地方！</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hehe-tui"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/hehe-tui" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1596060544@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">开开心心，不动脑筋；白白胖胖，充满希望！</div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="card-content"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">创建备份文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF"><span class="toc-number">2.</span> <span class="toc-text">创建分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2"><span class="toc-number">3.</span> <span class="toc-text">迁移博客</span></a></li></ol></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/12/16/Samba%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" title="Samba介绍与安装"><img src="https://pic.imgdb.cn/item/638af5a416f2c2beb1827dc0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Samba介绍与安装"/></a><div class="content"><a class="title" href="/2024/12/16/Samba%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" title="Samba介绍与安装">Samba介绍与安装</a><time datetime="2024-12-16T03:08:42.205Z" title="发表于 2024-12-16 11:08:42">2024-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/28/Prometheus%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" title="Prometheus介绍与安装"><img src="https://img.imgdb.cn/item/601267593ffa7d37b3b746d1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Prometheus介绍与安装"/></a><div class="content"><a class="title" href="/2021/01/28/Prometheus%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" title="Prometheus介绍与安装">Prometheus介绍与安装</a><time datetime="2021-01-27T16:00:00.000Z" title="发表于 2021-01-28 00:00:00">2021-01-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/25/JumpServer%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" title="JumpServer介绍与安装"><img src="https://pic.imgdb.cn/item/60a91b366ae4f77d350df72d.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JumpServer介绍与安装"/></a><div class="content"><a class="title" href="/2021/01/25/JumpServer%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" title="JumpServer介绍与安装">JumpServer介绍与安装</a><time datetime="2021-01-24T16:00:00.000Z" title="发表于 2021-01-25 00:00:00">2021-01-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/17/MySQL%E5%A2%9E%E9%87%8F%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/" title="MySQL增量备份与恢复"><img src="https://pic.imgdb.cn/item/61b5b6892ab3f51d91841eef.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySQL增量备份与恢复"/></a><div class="content"><a class="title" href="/2021/01/17/MySQL%E5%A2%9E%E9%87%8F%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/" title="MySQL增量备份与恢复">MySQL增量备份与恢复</a><time datetime="2021-01-16T16:00:00.000Z" title="发表于 2021-01-17 00:00:00">2021-01-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/13/Codis%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" title="Codis介绍与安装"><img src="https://pic.imgdb.cn/item/638af59e16f2c2beb1826d20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Codis介绍与安装"/></a><div class="content"><a class="title" href="/2021/01/13/Codis%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85/" title="Codis介绍与安装">Codis介绍与安装</a><time datetime="2021-01-12T16:00:00.000Z" title="发表于 2021-01-13 00:00:00">2021-01-13</time></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://pic.imgdb.cn/item/6384a20416f2c2beb1d0c290.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 <i style="color:#FF6A6A" class="fa fa-heartbeat"></i>极品路人甲</div><div class="framework-info"><span> </span><a target="_blank" rel="noopener" href="https://github.com/hehe-tui">GitHub</a><span class="footer-separator">|</span><span> </span><a target="_blank" rel="noopener" href="https://blog.csdn.net/HEHE_TUI">CSDN</a></div><div class="footer_custom_text">Hi, welcome to my blog ！</div><div class="icp"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/"><img class="icp-icon" src="/img/icp.png" alt="ICP"/><span>沪ICP备2021008910号-1</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})</script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script><script src="/js/weather.js"></script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script src="/js/weather.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body></html>
